@@ -2,9 +2,9 @@ from sqlalchemy import (
     Column,
     Integer,
     String,
-    Float,
     DateTime,
-    ForeignKey
+    ForeignKey,
+    Float
 )
 from sqlalchemy.sql import func
 from app.database import Base
