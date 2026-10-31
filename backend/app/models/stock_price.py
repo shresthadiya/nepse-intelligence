@@ -8,9 +8,7 @@ from sqlalchemy import (
     Index
 )
 from sqlalchemy.orm import relationship
-
 from app.database import Base
-
 
 class StockPrice(Base):
 
@@ -25,14 +23,11 @@ class StockPrice(Base):
     )
 
     date = Column(Date, nullable=False)
-
     open = Column(Float, nullable=False)
     high = Column(Float, nullable=False)
     low = Column(Float, nullable=False)
     close = Column(Float, nullable=False)
-
     volume = Column(Integer, nullable=False)
-
     company = relationship("Company", backref="stock_prices")
 
     __table_args__ = (

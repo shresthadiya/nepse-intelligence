@@ -1,8 +1,6 @@
 from datetime import date
 from typing import List, Optional
-
 from pydantic import BaseModel
-
 
 class CompanyResponse(BaseModel):
     id: int
@@ -11,7 +9,6 @@ class CompanyResponse(BaseModel):
     sector: Optional[str] = None
     is_active: bool
 
-
 class StockPriceResponse(BaseModel):
     date: date
     open: float
@@ -19,7 +16,6 @@ class StockPriceResponse(BaseModel):
     low: float
     close: float
     volume: int
-
 
 class CompanyPriceHistoryResponse(BaseModel):
     company_id: int
