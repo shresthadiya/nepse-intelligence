@@ -2,7 +2,8 @@ from fastapi import FastAPI
 from app.database import Base, engine
 
 # Import models before creating tables
-from app.models import Company
+from app.models import Company, StockPrice
+from app.api.companies import router as companies_router
 
 app = FastAPI(
     title="NEPSE Intelligence API",
@@ -11,6 +12,7 @@ app = FastAPI(
 )
 
 Base.metadata.create_all(bind=engine)
+app.include_router(companies_router)
 
 
 @app.get("/")
