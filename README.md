@@ -56,7 +56,6 @@ cd nepse-intelligence
 **FOR BACKEND**
 ```
 cd backend
-
 python3 -m venv env
 source env/bin/activate
 
