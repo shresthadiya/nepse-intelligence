@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/README.md/README.md.iml" filepath="$PROJECT_DIR$/README.md/README.md.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/nepse-intelligence.iml" filepath="$PROJECT_DIR$/.idea/nepse-intelligence.iml" />
     </modules>
   </component>
