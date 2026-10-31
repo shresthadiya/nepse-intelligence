@@ -48,7 +48,7 @@ Historical NEPSE trading data integration is subject to authorized data access.
 
 ### 1. Clone the Repository
 
-```bash
+```
 git clone https://github.com/YOUR_USERNAME/nepse-intelligence.git
 cd nepse-intelligence
 ```
